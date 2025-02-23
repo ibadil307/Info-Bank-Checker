@@ -11,7 +11,8 @@ import {
   Building,
   CircleDollarSign,
   Landmark,
-  BadgeCheck
+  BadgeCheck,
+  Info
 } from 'lucide-react';
 import axios from 'axios';
 import { clsx } from 'clsx';
@@ -38,6 +39,10 @@ function App() {
     }, 1500);
     return () => clearTimeout(timer);
   }, []);
+
+  const openCreatorInfo = () => {
+    window.open('https://portofolio.ibadil.web.id', '_blank');
+  };
 
   const bankOptions = {
     bank: [
@@ -173,6 +178,17 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-4">
       <Toaster position="top-center" />
+      
+      {/* Creator Info Button */}
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={openCreatorInfo}
+        className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm text-blue-600 p-3 rounded-full shadow-lg hover:bg-white transition-all duration-300 group"
+      >
+        <Info className="w-6 h-6 group-hover:animate-pulse" />
+      </motion.button>
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
