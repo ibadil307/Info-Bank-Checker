@@ -1,6 +1,6 @@
 # Info Bank Checker | Cek Rekening Online
 
-A modern web application for verifying bank account and e-wallet information quickly and securely.
+Sebuah aplikasi untuk memverifikasi informasi akun bank dan e-wallet.
 
 ## Features
 
@@ -23,7 +23,7 @@ A modern web application for verifying bank account and e-wallet information qui
 
 1. Clone the repository
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/ibadil307/info-bank-checker.git
 ```
 
 2. Install dependencies
@@ -43,7 +43,7 @@ npm run build
 
 ## Live Demo
 
-Visit: [Your Netlify URL]
+Visit: https://ibadil.xyz
 
 ## License
 
